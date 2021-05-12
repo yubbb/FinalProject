@@ -52,10 +52,10 @@ function dashboard(){
 
   Highcharts.chart('barchart', {
       title: {
-          text: 'Combination chart'
+          text: '후보별 평균 긍정률'
       },
       xAxis: {
-          categories: ['Apples', 'Oranges', 'Pears', 'Bananas', 'Plums']
+          categories: ['박영선', '오세훈', '김영춘', '박형준']
       },
       labels: {
           items: [{
@@ -69,23 +69,23 @@ function dashboard(){
       },
       series: [{
           type: 'column',
-          name: 'Jane',
-          data: [3, 2, 1, 3, 4],
+          name: '긍정 명사 비율',
+          data: [3, 2, 1, 3],
           color:'#f57c00'
       }, {
           type: 'column',
-          name: 'John',
-          data: [4, 3, 5, 7, 6],
+          name: '긍정 형용사 비율',
+          data: [4, 3, 5, 7],
           color:'#2BBBAD'
       }, {
           type: 'column',
-          name: 'Joe',
-          data: [3, 4, 2, 9, 5],
+          name: '긍정 동사 비율',
+          data: [3, 4, 2, 9],
           color:'#39444e'
       }, {
           type: 'spline',
-          name: 'Average',
-          data: [3.5, 2.67, 3, 6.33, 3.33],
+          name: 'Average 긍정률',
+          data: [3.5, 2.67, 3, 6.33],
           marker: {
               lineWidth: 2,
               lineColor: Highcharts.getOptions().colors[3],
