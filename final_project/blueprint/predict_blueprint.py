@@ -14,7 +14,5 @@ def predict():
 # 은서
 @predict_blue.route('/prediction')
 def prediction():    
-    # 렌더링시 데이터를 전달하고 싶으면 키=값 형태로 파라미터를 추가
-    # **kargs
-    return render_template('prediction.html')
-# /은서
+    return render_template('predict/prediction.html')
+
