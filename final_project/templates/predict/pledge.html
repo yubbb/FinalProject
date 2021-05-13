@@ -19,13 +19,11 @@
       {% include "public/sidebarchat.html" ignore missing %}
       <!-- Sidebar chat end-->
       <div class="content-wrapper">
-
-
-         <!-- 당선인 예측 페이지의 메인 시작-->
-        {% include "predict/main.html" ignore missing %}
-         <!-- 당선인 예측 페이지의 메인 끝-->
-
-
+         <!-- Container-fluid starts -->
+         <!-- Main content starts -->
+            {% include "predict/predict_pledge.html" ignore missing %}
+         <!-- Main content ends -->
+         <!-- Container-fluid ends -->
          <div class="fixed-button">
             <a href="#!" class="btn btn-md btn-primary">
               <i class="fa fa-shopping-cart" aria-hidden="true"></i> Upgrade To Pro

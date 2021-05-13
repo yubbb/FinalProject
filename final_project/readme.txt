@@ -8,3 +8,5 @@
 - (predict) : 예측 카테고리 html
 - (analysis) : 분석 카테고리 html
 - index.html : 주소만 입력하고 들어왔을 경우 호출될 부분
+
+# barchart, piechart 어떻게 할 것인지
