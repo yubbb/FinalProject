@@ -16,3 +16,7 @@ def predict():
 def prediction():    
     return render_template('predict/prediction.html')
 
+# 석영
+@predict_blue.route('/pledge')
+def pledge():
+    return render_template('predict/pledge.html')
