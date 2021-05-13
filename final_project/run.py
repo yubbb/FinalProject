@@ -1,40 +1,30 @@
 # -*- coding: utf-8 -*-
 # 기본 템플릿
+from flask import Blueprint
 from flask import Flask, render_template, request, redirect, url_for, session
 from flask import jsonify
-
+from flask import Flask
+from flask import redirect
 import os
 
+# Blueprint 불러오기
+from blueprint.main_blueprint import main_blue
+from blueprint.analysis_blueprint import analysis_blue
+from blueprint.predict_blueprint import predict_blue
+
+# 서버역할을 할 객체 생성
 app = Flask(__name__)
 
+# Blueprint 등록
+app.register_blueprint(main_blue)
+app.register_blueprint(analysis_blue)
+app.register_blueprint(predict_blue)
+
+# 주소만 입력하고 들어왔을 경우 호출될 부분
 @app.route('/')
 def home():    
-    # 렌더링시 데이터를 전달하고 싶으면 키=값 형태로 파라미터를 추가
-    # **kargs
-    return render_template('index.html')
+    return redirect('main')
 
-@app.route('/predict')
-def predict():    
-    # 렌더링시 데이터를 전달하고 싶으면 키=값 형태로 파라미터를 추가
-    # **kargs
-    return render_template('index.html')
-
-# 은서
-@app.route('/prediction')
-def prediction():    
-    # 렌더링시 데이터를 전달하고 싶으면 키=값 형태로 파라미터를 추가
-    # **kargs
-    return render_template('prediction.html')
-# /은서
-
-@app.route('/analysis')
-def analysis():    
-    # 렌더링시 데이터를 전달하고 싶으면 키=값 형태로 파라미터를 추가
-    # **kargs
-    return render_template('index.html')
-
-
-# ################################
 if __name__ == '__main__':
     app.run(debug=True)
     # [4] 소켓io를 이용하여 서버가동 (래핑해서 가동)
