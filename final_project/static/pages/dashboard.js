@@ -117,6 +117,12 @@ function dashboard(){
   });
 
 
+// barchart 실험
+
+// barchart 실험
+
+  
+
   Highcharts.chart('piechart', {
       chart: {
           type: 'pie',
