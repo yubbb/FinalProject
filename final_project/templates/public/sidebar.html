@@ -6,19 +6,20 @@
 
            <li class="treeview"><a class="waves-effect waves-dark" href="#!"><i class="icon-briefcase"></i><span> 4·7 재보궐 선거 결과 예측</span><i class="icon-arrow-down"></i></a>
                <ul class="treeview-menu">
-                   <li><a class="waves-effect waves-dark" href="{{url_for('predict')}}"><i class="icon-arrow-right"></i> 데이터 출처</a></li>
-                   <li><a class="waves-effect waves-dark" href="{{url_for('prediction')}}"><i class="icon-arrow-right"></i> 모델이 예측한 당선인</a></li>
-                   <li><a class="waves-effect waves-dark" href="{{url_for('predict')}}"><i class="icon-arrow-right"></i> 후보별 워드클라우드 </a></li>
-                   <li><a class="waves-effect waves-dark" href="{{url_for('predict')}}"><i class="icon-arrow-right"></i> 후보자 공약 및 선거 정보</a></li>
+                   <!-- url_for 사용할 때, 블루프린터.url이름 이런 형식으로 불러와야! -->
+                   <li><a class="waves-effect waves-dark" href="{{url_for('predict.predict')}}"><i class="icon-arrow-right"></i> 데이터 출처</a></li>
+                   <li><a class="waves-effect waves-dark" href="{{url_for('predict.prediction')}}"><i class="icon-arrow-right"></i> 모델이 예측한 당선인</a></li>
+                   <li><a class="waves-effect waves-dark" href="{{url_for('predict.predict')}}"><i class="icon-arrow-right"></i> 후보별 워드클라우드 </a></li>
+                   <li><a class="waves-effect waves-dark" href="{{url_for('predict.predict')}}"><i class="icon-arrow-right"></i> 후보자 공약 및 선거 정보</a></li>
                </ul>
            </li>
 
            <li class="treeview"><a class="waves-effect waves-dark" href="#!"><i class="icon-briefcase"></i><span> 4·7 재보궐 선거 결과 분석</span><i class="icon-arrow-down"></i></a>
                 <ul class="treeview-menu">
-                    <li><a class="waves-effect waves-dark" href="{{url_for('analysis')}}"><i class="icon-arrow-right"></i> 2030 정치 심리 분석</a></li>
-                    <li><a class="waves-effect waves-dark" href="{{url_for('analysis')}}"><i class="icon-arrow-right"></i> 이슈별 워드클라우드</a></li>
-                    <li><a class="waves-effect waves-dark" href="{{url_for('analysis')}}"><i class="icon-arrow-right"></i> 가중치 둔 댓글 워드 클라우드</a></li>
-                    <li><a class="waves-effect waves-dark" href="{{url_for('analysis')}}"><i class="icon-arrow-right"></i> 2030 정치 심리와 공약</a></li>
+                    <li><a class="waves-effect waves-dark" href="{{url_for('analysis.analysis')}}"><i class="icon-arrow-right"></i> 2030 정치 심리 분석</a></li>
+                    <li><a class="waves-effect waves-dark" href="{{url_for('analysis.analysis')}}"><i class="icon-arrow-right"></i> 이슈별 워드클라우드</a></li>
+                    <li><a class="waves-effect waves-dark" href="{{url_for('analysis.analysis')}}"><i class="icon-arrow-right"></i> 가중치 둔 댓글 워드 클라우드</a></li>
+                    <li><a class="waves-effect waves-dark" href="{{url_for('analysis.analysis')}}"><i class="icon-arrow-right"></i> 2030 정치 심리와 공약</a></li>
                 </ul>
             </li>   
 
